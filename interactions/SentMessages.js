@@ -107,6 +107,5 @@ const handleMessageRefactored = (message, msgObj) => {
 };
 
 module.exports = {
-  // messageHandler,
   handleMessageRefactored,
 };

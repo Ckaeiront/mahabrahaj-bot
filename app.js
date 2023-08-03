@@ -18,7 +18,6 @@ client.on("ready", () => console.log("logged as " + client.user.tag));
 client.on('messageCreate', async message => {
   const messageContent = message.channel.lastMessage.content;
   if (!message?.author.bot) {
-    // SentMessages.messageHandler(messageContent, message);
     SentMessages.handleMessageRefactored(messageContent, message);
   }
 });
